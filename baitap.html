@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FEET-METERS</title>
+</head>
+<body>
+<input type="text" id="dauvao">
+<select name="" id="select1">
+    <option value="a">METERS</option>
+    <option value="b">FEET</option>
+</select>
+<select name="" id="select2">
+    <option value="a">METERS</option>
+    <option value="b">FEET</option>
+</select>
+<button onclick="lamgido()">CONVERT</button>
+<script>
+function lamgido() {
+    let giatrivao= document.getElementById("dauvao").value;
+    let select1= document.getElementById("select1").value;
+    let select2= document.getElementById("select2").value;
+    if (select1==select2){
+        alert(giatrivao);
+    }
+    if (select1=='a' && select2=='b'){
+        alert(giatrivao/0.305);
+    }
+    if (select1=='b' && select2=='a'){
+        alert(giatrivao/3.279);
+    }
+}
+
+
+</script>
+</html>
